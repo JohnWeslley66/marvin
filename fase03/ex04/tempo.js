@@ -4,13 +4,13 @@ function tempo(data1, data2, unidade){
     var umDiaMilissegundos = 1000*60*60*24
     var umMesMilissegundos = 1000*60*60*24*30
     var umAnoMilissegundos = 1000*60*60*24*30*12
-    var diferencaMilissegundos = dataFinalMilissegundos  - dataInicialMilissegundos
+    var diferencaMilissegundos = Math.abs(dataFinalMilissegundos - dataInicialMilissegundos)
     
     if(unidade === "dia"){
     var diferencaDatadia = Math.round(diferencaMilissegundos/umDiaMilissegundos);
     return diferencaDatadia}
     
-    if(unidade === "mês"){
+    if(unidade === "mÃªs"){
     var diferencaDatames = Math.round(diferencaMilissegundos/umMesMilissegundos);
     return diferencaDatames}
     
@@ -18,3 +18,5 @@ function tempo(data1, data2, unidade){
     var diferencaData = Math.round(diferencaMilissegundos/umAnoMilissegundos);
     return diferencaData}
 }
+
+
