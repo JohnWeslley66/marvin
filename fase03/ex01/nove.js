@@ -1,11 +1,12 @@
 function nove(numero){
-    var valor = numero;
-    var sobra = 0;
-    sobra = valor % 10;
+    var nome = String(numero)
+    var sobra =  nome.substring(nome.length - 1, nome.length -0);
+    var isso = Number(sobra)
     
-    if(sobra === 9)
-    return(true)
-    
+    if(isso === 9)
+        return true
+        
     else
-    return(false)
+    return false
+    
 }
