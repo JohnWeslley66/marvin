@@ -1,8 +1,8 @@
 function parOuImpar(num){
     if (num%2===0)
-    return ('Numero é par')
+    return ('Par')
     
     else
-    return('Numero é impar')
+    return('Impar')
 }
 
